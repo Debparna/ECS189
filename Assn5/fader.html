@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Image read and display example</title>
+	<link rel="stylesheet" type="text/css" href="fader.css"> 
+</head>
+
+<body onload = "dumpDB()">
+<div class = "mainBody" >
+	<div id = "mobile">
+		<div id = "mobileHeading">
+			Photobooth.
+		</div>
+	        <div id = "options">
+			<div class="Mdropdown">
+			  <button onclick="myFunction2()" class="Mdropbtn"><img src="uploadIcon-01.png"></button>
+  				<div id="M2myDropdown" class="Mdropdown-content">
+    					<input type="file" id="fileSelector2">
+					<button class="Mupload" onclick="readFile()">upload</button>
+  				</div>
+			</div>
+			<div class = "Mdropdown">
+		           <button onclick = "myFunction3()" class = "Mdropbtn"> <img src = "filterIcon-01.png"> </button>
+				<div id = "M3myDropdown" class="Mdropdown-content">
+                                	<button class = "enter">enter </button>
+                                	<button class = "clear">clear filter</button>
+                        	</div>
+			</div>
+			<button> <img src = "favoritesIcon.png"> </button>
+		</div>
+	</div>
+	<div class="side-nav">
+			<ul>
+				<li class = "upload">Upload</li>
+				<li>
+					<input type="file" id="fileSelector1"> 
+				</li>
+				<li>
+					<button class = "sideButton" id="readButton" onclick="readFile()"> Upload </button>
+				</li>
+				<li class = "filter">Filter</li>
+				<li>
+					<a href="#search">
+						<input class = "sideButton" id ="searchButton" type="text" name="search" placeholder="Search.."> </a>
+				</li>
+				<li>
+					<button class = "sideButton" onclick = "enter">Enter</button>
+				</li>
+				<li>
+					<button class = "sideButton" id = "clearButton">Clear Filter</button>
+				</li>
+				<li class = "fav"> Favorites </li>
+			</ul>
+	</div>
+       <div class = "other-side">
+ 	<div class = "heading"> Photobooth </div>
+         <div id = "outer">	
+		<div id = "photoBody"> 
+               <!-- 
+           <div class= "container">
+              <div class = "newDiv">
+		<img class = "newimg" src = "">
+		
+	        <div class="dropdown">
+			<input type = "image" src = "optionsTriangle.png" class = "dropbtn close-image" onclick = "myFunction(0)">
+		  	<div class="dropdown-content" id =" myDropdown">
+    				<button class = "changeTags">change tags </button>
+    				<button class = "addFav">add to favorites</button>
+  		  	</div>
+		</div> 
+               <div class= "editdiv">
+                  <div class"editlabels">
+                  <div class ="inputtag">
+                  <button class = "addtag"></button>  -->
+              
+
+               </div>
+          </div>
+                
+		<!--<input id = "addTag" type = "text" placeholder = "enter tag">
+		<button class = "addTag"  onclick="addTag()"> Add </button> -->
+		<script src="fader.js"></script>
+	</div>
+</div>
+</body>
+
+</html>

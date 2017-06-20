@@ -1,0 +1,147 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<title>Weather App</title>
+</head>
+
+<body>
+	<div class="mobileTop1">
+		<div class="mobileTop2">
+			<input id="mobileZip" type="text" placeholder="enter zip"> <img src="../WeatherApp3/plus.png" width="30px" height="30px"> </div>
+		<div class="mobileTop3">
+			<p id="mobileMain11T">Today <span id="times"></span></p>
+			<p id="locations"> </p>
+		</div>
+	</div>
+	<div id="top">
+		<div id="main1">
+			<div id="main11">
+				<div id="main11T">Today <span id="time"></span> <b><p id="date"></p></b> </div>
+			</div>
+			<div id="main12">
+				<input id="zipbox" type="text" placeholder="enter zip">
+				<button class="zipButton" onclick="gotNewPlace()">submit</button>
+			</div>
+		</div>
+		<div id="main2">
+			<div id="main21"> <img id="img"> </div>
+			<div id="main22">
+				<p id="location"> </p>
+				<p class="temp"> <span id="temperature"> </span> &#8457; </p>
+				<p id="text"></p>
+			</div>
+			<div id="main23">
+				<div class="main231"> <img class="sideImg1" src="WeatherApp/drop.png" width="17px" height="25px">
+					<p class="sideImg2"> <span id="humidity"> </span>%</p>
+				</div>
+				<div class="main231"> <img class="sideImg1" src="../WeatherApp3/wind.png" width="17px" height="25px">
+					<p class="sideImg2"> <span id="wind"> </span>mph</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="range">
+		<div id="forecastMobile" class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span></div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<div> <span class="forecastHigh"> </span>&deg;</div>
+				<div> <span class="forecastLow"> </span>&deg;</div>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<center>
+					<div> <span class="forecastHigh"> </span>&deg;</div>
+				</center>
+				<center>
+					<div> <span class="forecastLow"> </span>&deg;</div>
+				</center>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="forecastDate"></div> <img class="image" src="" width="60%" height="40%">
+			<div class="forecastText"></div>
+			<div class="forecastHL">
+				<center>
+					<div> <span class="forecastHigh"> </span>&deg;</div>
+				</center>
+				<center>
+					<div> <span class="forecastLow"> </span>&deg;</div>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="buttons">
+		<div class="buttonDown1">
+			<button class="button2" onclick="buttonActionRight()"> <img src="../WeatherApp3/arrow-left.png" class="imgArrow"></button>previous forecasts </div>
+		<div class="buttonDown2"> more forecasts
+			<button class="button2" onclick=" buttonActionLeft()"> <img src="../WeatherApp3/arrow-right.png" class="imgArrow"> </button>
+		</div>
+	</div>
+	<script src="weather.js"></script>
+	<script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='davis, ca')&format=json&callback=callbackFunction"></script>
+</body>
+
+</html>

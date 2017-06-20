@@ -1,0 +1,313 @@
+@media screen and (min-width: 480px) {
+	body {
+		font-family: "Avenir next";
+		background: linear-gradient(#2E85B9, #19173C);
+		height: 120%;
+		width: 100%;
+	}
+	#date {
+		font-size: 17px;
+		font-weight: 300;
+		margin-top: 0px;
+	}
+	.forecastMobile {
+		display: none;
+	}
+	main {
+		display: flex;
+		flex-direction: row;
+		align-self: stretch;
+		margin: 5%;
+		margin-bottom: 100px;
+		width: 100%;
+	}
+	#range {
+		border-width: 5px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		width: 85%;
+		margin: auto;
+		align-self: stretch;
+	}
+	.forecast {
+		height: 260px;
+		min-width: 200px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border-radius: 10px;
+		background-color: #49799A;
+		align-content: center;
+		color: white;
+		padding-top: 10px;
+		text-align: center;
+		transition-property: right;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+		margin: 0.9%;
+	}
+	.forecastText {
+		margin: 4%;
+	}
+	#zipbox {
+		background-color: white;
+		opacity: 0.6;
+		border: none;
+		margin: 4px;
+		padding: 2px;
+	}
+	.zipButton {
+		background-color: deepskyblue;
+		color: white;
+		border-radius: 20px;
+		width: 60;
+		margin-left: 70px;
+	}
+	#main1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	#main11 {
+		display: flex;
+		flex-direction: column;
+	}
+	#main11T {
+		font-family: "Avenir next";
+		font-size: 30px;
+		font-weight: 100;
+		color: white;
+	}
+	#main12 {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+	#main2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#main22 {
+		justify-content: center;
+		text-align: center;
+	}
+	#main23 {
+		margin-top: 5%;
+		font-weight: 100;
+		font-size: 20px;
+	}
+	.main231 {
+		display: flex;
+		flex-direction: row;
+	}
+	#location {
+		margin-top: 0px;
+		font-size: 40px;
+		display: block;
+		margin-bottom: 0px;
+	}
+	#temperature {
+		font-size: 60px;
+		font-weight: 100;
+		margin-top: 0px;
+	}
+	.temp {
+		margin-top: 0px;
+	}
+	#top {
+		padding-top: 5%;
+		padding-left: 15%;
+		padding-right: 15%;
+		padding-bottom: 2%;
+		justify-content: center;
+	}
+	.image {
+		margin-left: 20%;
+	}
+	#img {
+		margin-top: 80px;
+	}
+	.forecastHL {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 10px;
+		font-size: 27px;
+		margin-top: 7%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.forecastLow {
+		font-weight: 100;
+	}
+	.forecastDate {
+		font-size: 30px;
+	}
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+	.buttonDown1 {
+		color: white;
+		margin-left: 100px;
+	}
+	.buttonDown2 {
+		color: white;
+		float: left;
+		margin-right: 100px;
+	}
+	.button1 {
+		float: left;
+		background-color: deepskyblue;
+		color: white;
+		border-radius: 10px;
+	}
+	.button2 {
+		background-color: white;
+		opacity: 0.2;
+		font-size: large;
+		border-radius: 48px;
+	}
+	input {
+		border-radius: 10px;
+		opacity: 2px;
+		background-color: white;
+	}
+	p {
+		color: white;
+	}
+	.location {
+		color: white;
+		font-family: "Avenir next";
+		font-size: 50px;
+		margin-top: 0px;
+	}
+	.imgArrow {
+		width: 20px;
+		height: 20px;
+	}
+	.sideImg1 {
+		margin-top: 16px;
+	}
+	.sideImg2 {
+		margin-left: 9px;
+	}
+	.mobileTop1 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.mobileTop1 {
+		display: block;
+		padding-left: 6px;
+	}
+	.mobileTop2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 14px;
+	}
+	.mobileTop3 {
+		display: block;
+	}
+	#mobileZip {
+		margin-top: 5px;
+		border-radius: 20px;
+		background-color: white;
+		opacity: 0.6;
+	}
+	#mobileMain11T {
+		font-family: "Avenir next";
+		font-weight: 100;
+		font-size: 30px;
+		color: white;
+		margin: 1%;
+	}
+	#locations {
+		color: white;
+		margin-top: 0px;
+		margin-bottom: 6%;
+	}
+	#main11 {
+		display: none;
+	}
+	#main2 {
+		display: none;
+	}
+	#date {
+		display: none;
+	}
+	#zipbox {
+		display: none;
+	}
+	.zipButton {
+		display: none;
+	}
+	.buttons {
+		display: none;
+	}
+	body {
+		font-family: "Avenir next";
+		min-height: 100vh;
+		background: linear-gradient(#2E85B9, #19173C);
+		display: block;
+	}
+	#range {
+		display: block;
+	}
+	.forecast {
+		display: none;
+	}
+	#forecastMobile {
+		height: 200px;
+		width: 150px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border-radius: 10px;
+		background-color: #49799A;
+		align-content: center;
+		color: white;
+		padding-top: 10px;
+		text-align: center;
+		margin-left: 20%;
+	}
+	.forecastHL {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 10px;
+		font-size: 27px;
+		margin-top: 7%;
+		padding-left: 16%;
+		padding-right: 20%;
+	}
+	.forecastLow {
+		font-weight: 100;
+		display: block;
+	}
+	.forecastText {
+		margin: 4%;
+	}
+	.mobileRange {
+		padding-left: 10%;
+		padding-right: 10%;
+		align-content: center;
+		margin-left: 10%;
+	}
+	.forecastDate {
+		display: block;
+		font-size: 30px;
+	}
+	.image {
+		margin-left: 25%;
+	}
+}
